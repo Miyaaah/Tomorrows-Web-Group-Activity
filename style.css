@@ -1,0 +1,174 @@
+/* Reset basic margins and set font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 18px 48px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo image sizing */
+.logo img {
+  height: 42px; /* Adjust height to fit your PNG nicely */
+  width: auto;
+  display: block;
+}
+
+/* Right side wrapper (Links + Button) */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+/* Menu links list */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #111111;
+  font-size: 16px;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+/* Link hover effect */
+.nav-links a:hover {
+  color: #2b327b;
+}
+
+/* "Shop Now" Button */
+.btn-shop {
+  text-decoration: none;
+  background-color: #2b327b; /* Kinza brand dark blue */
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 10px 24px;
+  border-radius: 4px;
+  transition: opacity 0.2s ease;
+}
+
+.btn-shop:hover {
+  opacity: 0.9;
+}
+
+/* Hero section wrapper */
+.hero {
+  width: 100%;
+  overflow: hidden; /* prevents any horizontal scrolling */
+}
+
+/* Make the hero image stretch cleanly */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block; 
+  margin-bottom: 50px; 
+}
+
+.hero-text {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  color: #2b327b; /* Kinza brand dark blue */
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  width: 80%;
+  margin-left: auto;   /* Centers the 80% box */
+  margin-right: auto;
+  margin-bottom: 20px;
+  line-height: 1.3;    /* Makes paragraph text much easier to read */
+  color: #646277; /* Dark gray for better readability */
+}
+
+
+.flavors {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.flavors h1 {
+  font-size: 36px;
+  color: #2b327b; /* Kinza brand dark blue */
+  margin-bottom: 40px;
+}
+
+
+/* Container for the flavours section */
+.flavours-section {
+  width: 100%;
+  padding: 40px 48px 80px;
+}
+
+/* Flexbox row to hold 3 cards side-by-side */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual card styling */
+.flavor-card {
+  flex: 1; /* Makes all 3 cards equal width */
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Gentle lift when hovering */
+.flavor-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Card image styling */
+.flavor-card img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: contain; /* Keeps can proportions without distortion */
+  margin-bottom: 20px;
+}
+
+/* Card titles */
+.flavor-card h3 {
+  font-size: 26px;
+  color: #2b327b; /* Kinza dark blue */
+  margin-bottom: 10px;
+}
+
+/* Card description text */
+.flavor-card p {
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.5;
+}
